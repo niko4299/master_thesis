@@ -1,0 +1,37 @@
+{
+  "train": {
+    "start": "2007-01-01",
+    "end": "2020-08-01"
+  },
+  "val": {
+    "start": "2020-11-01",
+    "end": "2021-06-07"
+  },
+  "test": {
+    "start": "2019-07-20",
+    "end": "2020-05-15"
+  },
+  "selected_symbols": 25,
+  "number_of_trading_days":20,
+  "selected_features": 4,
+  "freq": "1D",
+  "total_step": 35000,
+  "output_step": 1000,
+  "x_window_size": 35,
+  "batch_size": 32,
+  "trading_consumption": 0.0025,
+  "variance_penalty": 0.0,
+  "cost_penalty": 0.0,
+  "learning_rate": 1e-5,
+  "model_dir": "./rat_trader/runs",
+  "model_name": "finalni",
+  "model_index": 1,
+  "model_dim": 24,
+  "multihead_num": 3,
+  "local_context_length": 8,
+  "weight_decay": 1e-7,
+  "daily_interest_rate": 0.001,
+  "buffer_bias_ratio": 4e-5,
+  "log_dir": "./rat_trader/logs",
+  "device": "cuda"
+}

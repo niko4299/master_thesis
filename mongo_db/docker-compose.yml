@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  database:
+    image: mongo:latest
+    container_name: 'diplomski_container'
+    environment:
+      MONGO_INITDB_DATABASE: diplomski_db
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017
