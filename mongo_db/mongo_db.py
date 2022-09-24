@@ -47,7 +47,7 @@ def process_data(data):
 
 if __name__ == "__main__":
     df = process_data(download_data())
-    # collection = utils.get_db_collection()
-    # collection.drop()
-    # collection.insert_many(df.to_dict('records'))
+    collection = utils.get_db_collection()
+    collection.drop()
+    collection.insert_many(df.to_dict('records'))
 

@@ -1,1 +1,3 @@
-# diplomski_rad
+# MASTER THESIS
+# OPTIMIZING STOCK PORTFOLIOS USING DEEP LEARNING
+In this paper there are 3 phases. In first phase, in `autoencoder` directory, we train convolutional autoencoder by using candelstick chart images that we created from stock time series.In second phase, in directory `porfolio_construct` we construct portfolio using convolutional autoencoder and leiden algorithm for community detection (from each community we take stocks with best sharpe ratio). In third phase, by running `main.py` script we train reinforcement learning agent which has modified Transformer neural network arhitecture. The way the system works is that we construct our portfolio (25 stocks) after a set amount of time (25 days) from 400 stocks that are a member of the S&P 500. After we constructed our portfolio, agent rebalances equity weights at the end of each day in an attempt to maximize profit.
